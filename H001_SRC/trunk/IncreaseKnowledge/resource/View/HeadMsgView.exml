@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.HeadMsgView" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ViewModel="ViewModel.*">
+	<e:Group id="headMsgGroup" left="0" right="0" top="0" bottom="0">
+		<e:Group id="headListGroup" scaleX="1" scaleY="1" width="810" height="630" verticalCenter="25" horizontalCenter="-215">
+			<e:Image id="headBg" scale9Grid="1,1,1,628" width="810" height="630" horizontalCenter="0" verticalCenter="0" source="mainGame_json.bg_tiankuang03"/>
+			<e:Image id="listBg" scale9Grid="1,1,1,1" horizontalCenter="0" width="810" height="456" verticalCenter="-17" source="mainGame_json.bg_tiankuang04"/>
+			<e:Label id="headTitle" horizontalCenter="0" fontFamily="黑体" size="44" verticalCenter="-280" text="設定頭像"/>
+			<e:Button id="cancelBtn" label="取消" width="233" verticalCenter="264.5" height="71" horizontalCenter="0" skinName="skins.ButtonSkin"/>
+			<e:Scroller width="810" height="456" horizontalCenter="0" verticalCenter="-17">
+				<e:Group height="692">
+					<ViewModel:HeadItemVM id="sagittariusBtn" skinName="View.HeadItemView" verticalCenter="-116" horizontalCenter="-287"/>
+					<ViewModel:HeadItemVM id="leoBtn" horizontalCenter="-287" verticalCenter="72" skinName="View.HeadItemView" x="10" y="10"/>
+					<ViewModel:HeadItemVM id="ariesBtn" x="20" y="20" skinName="View.HeadItemView" horizontalCenter="-287" verticalCenter="261"/>
+					<ViewModel:HeadItemVM id="scorpioBtn" skinName="View.HeadItemView" horizontalCenter="-98" verticalCenter="-116"/>
+					<ViewModel:HeadItemVM id="libraBtn" horizontalCenter="-98" verticalCenter="72" skinName="View.HeadItemView" x="10" y="10"/>
+					<ViewModel:HeadItemVM id="cancerBtn" x="20" y="20" skinName="View.HeadItemView" horizontalCenter="-98" verticalCenter="261"/>
+					<ViewModel:HeadItemVM id="taurusBtn" skinName="View.HeadItemView" horizontalCenter="88" verticalCenter="-116"/>
+					<ViewModel:HeadItemVM id="geminiBtn" horizontalCenter="88" skinName="View.HeadItemView" verticalCenter="72" x="10" y="10"/>
+					<ViewModel:HeadItemVM id="capricornBtn" y="20" x="20" horizontalCenter="88" verticalCenter="261" skinName="View.HeadItemView"/>
+					<ViewModel:HeadItemVM id="virgoBtn" skinName="View.HeadItemView" horizontalCenter="275" verticalCenter="-116"/>
+					<ViewModel:HeadItemVM id="piscesBtn" horizontalCenter="275" verticalCenter="72" skinName="View.HeadItemView" x="10" y="10"/>
+					<ViewModel:HeadItemVM id="aquariusBtn" x="20" y="20" skinName="View.HeadItemView" horizontalCenter="275" verticalCenter="261"/>
+					<e:layout>
+						<e:BasicLayout/>
+					</e:layout>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+</e:Skin>

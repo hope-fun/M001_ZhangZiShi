@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.HeadItemView" states="up,down" width="166" height="166" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="headGroup" left="0" right="0" top="0" bottom="0">
+		<e:Image id="headBg" source="hong" left="0" right="0" top="0" bottom="0" scale9Grid="1,1,1,1"/>
+		<e:Image id="headBtn" source="01" fillMode="scale" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image id="headMask" source="bg_02" left="0" right="0" top="0" bottom="0" scale9Grid="1,1,1,1" alpha="0.5" visible="false"/>												
+	</e:Group>
+</e:Skin>

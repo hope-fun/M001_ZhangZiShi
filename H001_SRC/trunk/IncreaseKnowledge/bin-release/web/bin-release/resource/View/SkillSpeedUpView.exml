@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.SkillSpeedUpView" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" height="630" y="70">
+		<e:Image left="444" right="0" height="630" y="0" source="mainGame_json.bg_tiankuang04" scale9Grid="1,1,1,1"/>
+		<e:Rect height="120" width="836" fillColor="0x93BCD3" horizontalCenter="221" y="200"/>
+		<e:Image source="mainGame_json.icon_shezhi" horizontalCenter="214.5" verticalCenter="-258"/>
+		<e:Label id="skillLeftTime" text="00:00:00" horizontalCenter="221" size="80" y="220"/>
+		<e:Label id="skillName" size="36" bold="true" fontFamily="Adobe 黑体 Std R" textColor="0x333333" left="848" verticalCenter="-197"/>
+		<e:Label id="diamond" bold="true" size="38" verticalCenter="85" left="960"/>
+		<e:Label id="skillDetail" horizontalCenter="220" verticalCenter="-150"/>
+		<e:Button id="noNeed" label="继续等待" skinName="skins.ButtonSkin" verticalCenter="214" width="234" height="71" x="595"/>
+		<e:Button id="use" label="立刻完成" height="71" width="234" verticalCenter="214.5" x="890"/>
+		<e:Label text="训练中:" width="131" height="42" size="36" bold="true" fontFamily="Adobe 黑体 Std R" textColor="0x333333" horizontalCenter="140.5" verticalCenter="-194"/>
+		<e:Image source="mainGame_json.icon_zuan" width="38" height="29" horizontalCenter="293" verticalCenter="83.5"/>
+		<e:Label text="使用宝石加速" size="38" bold="true" fontFamily="Adobe 黑体 Std R" horizontalCenter="119" verticalCenter="85"/>
+	</e:Group>
+</e:Skin>

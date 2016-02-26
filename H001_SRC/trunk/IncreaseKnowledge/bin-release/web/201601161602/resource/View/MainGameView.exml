@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.MainGameView" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ViewModel="ViewModel.*">
+	<e:Group id="searchGroup" width="1280" height="720" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="searchBg" fillMode="scale" left="2" right="-2" top="-1" bottom="1" source="hui"/>
+		<e:Image id="matchTemp" left="0" right="0" top="0" bottom="0" source="matchTemp" visible="false"/>
+		<e:Image id="opponentTemp" source="opponentTemp" left="0" right="0" top="0" bottom="0" visible="false"/>
+		<e:Group id="opponentGroup" width="640" x="640" height="720" verticalCenter="0">
+			<e:Button id="cancelBtn" label="取消" width="235" height="72" skinName="skins.ButtonSkin" verticalCenter="290" horizontalCenter="0" visible="false"/>
+			<e:Group id="boboGroup" width="610" height="636" verticalCenter="0" horizontalCenter="0">
+				<e:Image id="bobo_01" source="bobo" width="610" height="636" horizontalCenter="0" verticalCenter="0" scaleX="0" scaleY="0"/>
+				<e:Image id="bobo_02" source="bobo" width="610" height="636" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				<e:Image id="bobo_03" source="bobo" width="610" height="636" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Group>
+			<e:Group id="dotGroup" width="610" height="636" verticalCenter="0" x="15">
+				<e:Image id="dot_01" source="shengnuehao_da" verticalCenter="3" horizontalCenter="0" width="96" height="96"/>
+				<e:Image id="dot_02" source="shengnuehao_da" horizontalCenter="0" verticalCenter="2" width="96" height="96"/>
+				<e:Image id="dot_03" width="96" height="96" source="shengnuehao_da" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="dot_04" source="shengnuehao_da" verticalCenter="0" horizontalCenter="0" width="96" height="96"/>
+				<e:Image id="dot_05" source="shengnuehao_da" horizontalCenter="0" verticalCenter="0" x="10" y="10" width="96" height="96"/>
+				<e:Image id="dot_06" source="shengnuehao_da" horizontalCenter="0" width="96" verticalCenter="0" height="96" x="10" y="10"/>
+				<e:Image id="dot_07" source="shengnuehao_da" horizontalCenter="0" verticalCenter="0" x="10" y="10" width="96" height="96"/>
+				<e:layout>
+					<e:HorizontalLayout gap="4" horizontalAlign="center" verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+			<e:Label id="searchLabel" text="正在搜寻对手" y="114" horizontalCenter="0" fontFamily="黑体" stroke="1" strokeColor="0x000000"/>
+			<e:Label id="timeLabel" horizontalCenter="0" y="212" text="1" fontFamily="黑体" x="10" size="108"/>
+			<e:Group id="matchGroup" width="640" x="640" height="720" verticalCenter="0">
+				<e:Image id="opponentBg" source="level_04_png" left="0" right="0" top="0" bottom="0"/>
+				<e:Group id="opponentHeadGroup" horizontalCenter="0" verticalCenter="0" width="250" height="300" x="10" y="10">
+					<e:Image id="opponentHeadBorder" left="0" top="0" bottom="0" right="0" source="mainGame_json.bg_02" scale9Grid="1,1,1,1"/>
+					<e:Image id="opponentHeadBg" left="15" right="15" top="15" bottom="65" source="mainGame_json.hong" scale9Grid="1,1,1,1"/>
+					<e:Group id="opponentHeadIconGroup" right="15" left="15" top="15" bottom="65">
+						<e:Image id="opponentHeadIcon" scale9Grid="1,1,1,1" source="01" horizontalCenter="0" verticalCenter="0"/>
+					</e:Group>
+					<e:Label id="opponentName" textColor="0x403F3F" horizontalCenter="1" text="参赛者" fontFamily="黑体" bottom="15" size="35" top="250"/>
+				</e:Group>
+				<e:layout>
+					<e:BasicLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group id="myGroup" width="640" x="-640" height="720" verticalCenter="0">
+			<e:Image id="myBg" source="level_01_png" left="0" right="0" top="0" bottom="0"/>
+			<e:Group id="headGroup" height="300" width="250" verticalCenter="0" horizontalCenter="0">
+				<e:Image id="headBorder" left="0" right="0" top="0" bottom="0" source="bg_02" scale9Grid="1,1,1,1"/>
+				<e:Image id="headBg" source="hong" scale9Grid="1,1,1,1" left="15" right="15" top="15" bottom="65"/>
+				<e:Group id="headIconGroup" left="15" right="15" top="15" bottom="65">
+					<e:Image id="headIcon" scale9Grid="1,1,1,1" source="01" verticalCenter="0" horizontalCenter="0"/>
+				</e:Group>
+				<e:Label id="nameLabel" text="参赛者" fontFamily="黑体" size="35" horizontalCenter="1" bottom="15" textColor="0x403F3F" top="250"/>
+			</e:Group>
+		</e:Group>
+		<e:Image id="shuziBg" source="bg_shuzi" width="720" height="720" horizontalCenter="0" verticalCenter="0" alpha="0.1" visible="false"/>
+		<e:Label id="shuziLabel" width="79" height="70" size="72" textColor="0xFF9D00" textAlign="center" verticalAlign="middle" fontFamily="黑体" verticalCenter="0" horizontalCenter="0" visible="false"/>
+	</e:Group>
+	<e:Group id="gameGroup" width="1280" height="720" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Image id="mainGameBg" source="level_02_png" verticalCenter="0.5" horizontalCenter="0" width="1280" height="1321"/>
+		<e:Image id="game03" source="game03" left="0" right="0" top="0" bottom="0" visible="false"/>
+		<e:Group id="myGameHeadGroup" height="212" width="177" x="20" y="20">
+			<e:Image id="myGameHeadBg" source="bg_02" width="177" height="212" verticalCenter="0" horizontalCenter="0" scale9Grid="1,1,1,1"/>
+			<ViewModel:HeadItemVM id="myGameHead" right="10" left="10" bottom="50" top="10"/>
+			<e:Label id="myNameLabel" text="參賽者" textAlign="center" verticalAlign="middle" textColor="0x000000" fontFamily="黑体" size="26" horizontalCenter="0.5" verticalCenter="81"/>
+		</e:Group>
+		<e:Group id="opponentGameHeadGroup" height="212" width="177" x="1083" y="20">
+			<e:Image id="opponentGameHeadBg" source="bg_02" horizontalCenter="0" verticalCenter="0" width="177" height="212" scale9Grid="1,1,1,1"/>
+			<ViewModel:HeadItemVM id="opponentGameHead" skinName="View.HeadItemView" left="10" right="10" top="10" bottom="50"/>
+			<e:Label id="opponentNameLabel" horizontalCenter="0.5" textColor="0x000000" verticalCenter="81" text="參賽者" fontFamily="黑体" textAlign="center" size="26" verticalAlign="middle"/>
+		</e:Group>
+		<e:Group id="myScoreGroup" height="420" width="102" x="-150" y="290">
+			<e:Image id="myScoreBg" scale9Grid="49,49,8,8" left="0" right="0" top="0" bottom="0" source="bg_defentiao"/>
+			<e:Image id="myScoreImage" source="bg_defentiao_lv" width="30" height="0" scale9Grid="1,1,1,1" horizontalCenter="0" bottom="37"/>
+			<e:Image id="myErrorImage" horizontalCenter="0" width="30" height="347" x="10" source="mainGame_json.hong" scale9Grid="1,1,1,1" alpha="0.5" bottom="37" visible="false"/>
+		</e:Group>
+		<e:Group id="opponentScoreGroup" width="102" height="420" x="1328" y="290">
+			<e:Image id="opponentScoreBg" source="bg_defentiao" left="0" bottom="0" top="0" right="0" scale9Grid="49,49,8,8"/>
+			<e:Image id="opponentScoreImage" source="bg_defentiao_lv" horizontalCenter="0" scale9Grid="1,1,1,1" width="30" height="0" bottom="37"/>
+			<e:Image id="opponentErrorImage" horizontalCenter="0" width="30" height="347" x="10" source="mainGame_json.hong" scale9Grid="1,1,1,1" alpha="0.5" bottom="37" visible="false"/>
+		</e:Group>
+		<e:Group id="daojishiGroup" width="160" height="160" horizontalCenter="-1" verticalCenter="-253">
+			<e:Group width="160" height="160" horizontalCenter="-15" verticalCenter="-44">
+				<e:Image id="daojishi01" source="daojishi01" rotation="30" width="10" height="31" horizontalCenter="27" verticalCenter="-3.5"/>
+				<e:Image id="daojishi02" source="daojishi01" width="10" rotation="60" height="31" horizontalCenter="48" verticalCenter="6.5"/>
+				<e:Image id="daojishi03" source="daojishi01" width="10" rotation="90" height="31" horizontalCenter="63" verticalCenter="29.5"/>
+				<e:Image id="daojishi04" source="daojishi01" width="10" rotation="120" height="31" horizontalCenter="63" verticalCenter="54.5"/>
+				<e:Image id="daojishi05" source="daojishi01" width="10" rotation="150" height="31" horizontalCenter="54" verticalCenter="77.5"/>
+				<e:Image id="daojishi06" source="daojishi01" width="10" rotation="180" height="31" horizontalCenter="30" verticalCenter="90.5"/>
+				<e:Image id="daojishi07" source="daojishi01" width="10" rotation="210" height="31" horizontalCenter="6" verticalCenter="92.5"/>
+				<e:Image id="daojishi08" source="daojishi01" width="10" rotation="240" height="31" horizontalCenter="-18" verticalCenter="81.5"/>
+				<e:Image id="daojishi09" source="daojishi01" width="10" rotation="270" height="31" horizontalCenter="-30" verticalCenter="59.5"/>
+				<e:Image source="daojishi01" width="10" rotation="300" height="31" id="daojishi10" horizontalCenter="-33" verticalCenter="33.5"/>
+				<e:Image source="daojishi01" id="daojishi11" width="10" rotation="330" height="31" horizontalCenter="-21" verticalCenter="11.5"/>
+				<e:Image id="daojishi12" source="daojishi01" width="10" rotation="360" height="31" horizontalCenter="0" verticalCenter="-2.5"/>
+			</e:Group>
+			<e:Label id="duringLabel" textAlign="center" verticalAlign="middle" size="60" fontFamily="黑体" width="80" horizontalCenter="0" height="80" verticalCenter="0"/>
+		</e:Group>
+		<e:Label id="queLabel" verticalAlign="middle" left="200" fontFamily="黑体" textAlign="center" bottom="384" right="200" size="34" top="154" x="10" y="10" stroke="1.5" strokeColor="0x000000" lineSpacing="15"/>
+		<e:Group id="typeGroup" height="61" width="189" horizontalCenter="-1.5" verticalCenter="-125.5">
+			<e:Image source="button_hong" scale9Grid="13,13,6,6" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="typeLabel" text="南京" left="10" right="10" top="10" bottom="10" textAlign="center" verticalAlign="middle" fontFamily="黑体" size="34"/>
+		</e:Group>
+		<e:Label id="qIdLabel" text="第1題" width="377" height="113" verticalCenter="-22.5" horizontalCenter="-0.5" verticalAlign="middle" textAlign="center" fontFamily="黑体" size="108" stroke="1" strokeColor="0x000000"/>
+		<e:Group id="answerBtnGroup" width="1060" height="295" horizontalCenter="-4" verticalCenter="154.5">
+			<e:Button id="answer_01" width="496" height="115" verticalCenter="-76" horizontalCenter="-261">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="496" height="115" source="button_on"  scale9Grid="14,14,4,4" source.down="button_on" scale9Grid.down="14,14,4,4" verticalCenter="0" horizontalCenter="0" scaleX.down="1.025" scaleY.down="1.025"/>
+						<e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
+						         size="32" fontFamily="黑体"
+						         textColor="0x000000" textColor.down="0x000000"  verticalAlign="middle" textAlign="center"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="answer_02" width="496" height="115" skinName="skins.ButtonSkin" horizontalCenter="271" verticalCenter="-73">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="496" height="115" source="button_on"  scale9Grid="14,14,4,4" source.down="button_on" scale9Grid.down="14,14,4,4" verticalCenter="0" horizontalCenter="0" scaleX.down="1.025" scaleY.down="1.025"/>
+						<e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
+						         size="32" fontFamily="黑体"
+						         textColor="0x000000" textColor.down="0x000000"  verticalAlign="middle" textAlign="center"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="answer_03" width="496" height="115" skinName="skins.ButtonSkin" horizontalCenter="-265" verticalCenter="71">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="496" height="115" source="button_on"  scale9Grid="14,14,4,4" source.down="button_on" scale9Grid.down="14,14,4,4" verticalCenter="0" horizontalCenter="0" scaleX.down="1.025" scaleY.down="1.025"/>
+						<e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
+						         size="32" fontFamily="黑体"
+						         textColor="0x000000" textColor.down="0x000000"  verticalAlign="middle" textAlign="center"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+			<e:Button id="answer_04" width="496" height="115" skinName="skins.ButtonSkin" horizontalCenter="271" verticalCenter="71">
+			<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="496" height="115" source="button_on"  scale9Grid="14,14,4,4" source.down="button_on" scale9Grid.down="14,14,4,4" verticalCenter="0" horizontalCenter="0" scaleX.down="1.025" scaleY.down="1.025"/>
+						<e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
+						         size="32" fontFamily="黑体"
+						         textColor="0x000000" textColor.down="0x000000"  verticalAlign="middle" textAlign="center"/>
+					</e:Skin>
+				</e:skinName>
+					</e:Button>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="answerMaskGroup" horizontalCenter="-4" verticalCenter="154.5" width="1060" height="295" x="10" y="10" visible="false">
+			<e:Image id="answerMask_01" source="button_lv" width="496" height="115" horizontalCenter="-261" verticalCenter="-76" scale9Grid="12,12,8,8" visible="false"/>
+			<e:Image id="answerMask_02" source="button_lv" x="553" y="17" width="496" height="115" scale9Grid="12,12,8,8" visible="false"/>
+			<e:Image id="answerMask_03" source="button_lv" width="496" height="115" verticalCenter="71" horizontalCenter="-265" scale9Grid="12,12,8,8" visible="false"/>
+			<e:Image id="answerMask_04" source="button_lv" width="496" height="115" verticalCenter="71" horizontalCenter="271" scale9Grid="12,12,8,8" visible="false"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="leftMarkGroup" horizontalCenter="-4" verticalCenter="154.5" width="1060" height="295" x="10" y="10" visible="false">
+			<e:Image id="leftMark_01" scale9Grid="12,12,8,8" source="icon_dadui01" top="55" left="50" visible="false"/>
+			<e:Image id="leftMark_02" scale9Grid="12,12,8,8" source="icon_dadui01" right="450" top="55" visible="false"/>
+			<e:Image id="leftMark_03" scale9Grid="12,12,8,8" source="icon_dadui01" bottom="55" left="50" visible="false"/>
+			<e:Image id="leftMark_04" scale9Grid="12,12,8,8" bottom="55" source="icon_dadui01" right="450" visible="false"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="rightMarkGroup" y="20" horizontalCenter="-4" verticalCenter="154.5" width="1060" height="295" x="20" touchEnabled="false" visible="false">
+			<e:Image id="rightMark_01" scale9Grid="12,12,8,8" source="icon_dadui01" left="450" top="55" touchEnabled="false" visible="false"/>
+			<e:Image id="rightMark_02" scale9Grid="12,12,8,8" source="icon_dadui01" right="50" top="55" touchEnabled="false" visible="false"/>
+			<e:Image id="rightMark_03" scale9Grid="12,12,8,8" source="icon_dadui01" bottom="55" left="450" touchEnabled="false" visible="false"/>
+			<e:Image id="rightMark_04" scale9Grid="12,12,8,8" source="icon_dadui01" right="50" bottom="55" touchEnabled="false" visible="false"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="accountGroup" bottom="0" right="0" left="0" top="0" x="10" y="10" visible="false">
+		<e:Image id="game09Temp" source="game09" left="0" right="0" top="0" bottom="0" visible="false"/>
+		<e:Image id="accountBg" source="bg_tiankuang01" scale9Grid="1,1,1,628" left="0" right="0" top="70" bottom="0"/>
+		<e:Group id="myAccountHeadGroup" height="212" width="177" left="180" top="200">
+			<e:Image id="myAccountHeadBg" source="bg_02" width="177" height="212" verticalCenter="0" horizontalCenter="0" scale9Grid="1,1,1,1"/>
+			<ViewModel:HeadItemVM id="myAccountHead" right="10" left="10" bottom="50" top="10"/>
+			<e:Label id="myAccountNameLabel" text="參賽者" textAlign="center" verticalAlign="middle" textColor="0x000000" fontFamily="黑体" size="26" horizontalCenter="0.5" verticalCenter="81"/>
+		</e:Group>
+		<e:Group id="opponentAccountHeadGroup" width="177" height="212" right="180" top="200">
+			<e:Image id="opponentAccountHeadBg" source="bg_02" horizontalCenter="0" verticalCenter="0" width="177" height="212" scale9Grid="1,1,1,1"/>
+			<ViewModel:HeadItemVM id="opponentAccountHead" skinName="View.HeadItemView" left="10" right="10" top="10" bottom="50"/>
+			<e:Label id="opponentAccountNameLabel" horizontalCenter="0.5" textColor="0x000000" verticalCenter="81" text="參賽者" fontFamily="黑体" textAlign="center" size="26" verticalAlign="middle"/>
+		</e:Group>
+		<e:Group id="rightByRightGroup" height="61" width="360" verticalCenter="-10" horizontalCenter="-1">
+			<e:Image alpha="0.3" source="bg_01" scale9Grid="1,1,1,1" width="318" height="61" horizontalCenter="6" verticalCenter="0"/>
+			<e:Label id="rightByRightLabel" text="XX連對答對X題" verticalCenter="0" horizontalCenter="0" textAlign="center" verticalAlign="middle"/>
+		</e:Group>
+		
+		<e:Button id="againChallengeBtn" width="237" height="71" horizontalCenter="-313.5" verticalCenter="257.5" skinName="skins.ButtonSkin" label="再次挑戰">
+		</e:Button>
+		<e:Button id="searchOpponentBtn" y="583" x="520" width="235" height="71" skinName="skins.ButtonSkin" label="找新對手"/>
+		<e:Button id="backHomeBtn" y="583" width="235" label="回首頁" skinName="skins.ButtonSkin" height="71" x="820"/>
+		<e:Group id="resultGroup" height="152" width="512" horizontalCenter="0" top="149">
+			<e:Image source="bg_02" left="0" right="0" top="0" bottom="0" scale9Grid="1,1,1,1" alpha="0.1"/>
+			<e:Label id="resultlabel" text="挑戰XX" fontFamily="黑体" size="108" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="goldGroup" height="43" width="200" horizontalCenter="0" y="421">
+			<e:Label text="金幣：" fontFamily="黑体" size="40" verticalAlign="middle" textAlign="left" verticalCenter="0.5" horizontalCenter="-34"/>
+			<e:Image source="icon_jinbi" verticalCenter="0.5" horizontalCenter="39"/>
+			<e:Label id="goldLabel" text="0" fontFamily="黑体" textAlign="left" verticalAlign="middle" size="40" verticalCenter="0.5" left="174"/>
+		</e:Group>
+		<e:Group id="expGroup" width="200" y="491" height="43" horizontalCenter="0" x="10">
+			<e:Label text="經驗：" fontFamily="黑体" textAlign="left" verticalAlign="middle" size="40" verticalCenter="0.5" horizontalCenter="-34"/>
+			<e:Image verticalCenter="0.5" horizontalCenter="39" source="mainGame_json.icon_jingyan"/>
+			<e:Label id="expLabel" left="174" size="40" text="0" fontFamily="黑体" textAlign="left" verticalAlign="middle" verticalCenter="0.5"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

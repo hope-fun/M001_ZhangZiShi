@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.BankMsgItem" width="200" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="bankMsgGroup" alpha="0.5" width="200" height="100" y="0" horizontalCenter="0">
+		<e:Image id="backMsgImage" source="mainGame_json.button_hong" scale9Grid="14,14,5,5" left="0" right="0" top="0" bottom="0"/>
+		<e:Label id="backMsgLabel" text="余额不足稍后再领" fontFamily="黑体" left="28" right="28" top="10" bottom="10" textAlign="center" verticalAlign="middle" size="30"/>
+		<e:Label id="backEarnLabel" fontFamily="黑体" textAlign="center" size="70" text="+50" verticalAlign="middle" y="10" width="144" height="80" horizontalCenter="0" visible="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.MallMsgView" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image id="mallBg" source="mainGame_json.bg_tiankuang02" x="232" y="69" width="809" scale9Grid="1,1,1,628" height="630"/>
+		<e:Image id="iconImage" source="mainGame_json.icon_zuan" x="481" y="75" width="82" height="62"/>
+		<e:Label id="mallTitle" text="宝石商店" x="579" y="85" textColor="0x000000" fontFamily="黑体" size="43" textAlign="left" verticalAlign="middle"/>
+		<e:Group id="goodsGroup" width="717" height="395" verticalCenter="-11.5" horizontalCenter="-0.5" touchEnabled="true">
+			<e:Group id="goodsGroup01" height="191" width="342" horizontalCenter="-182.5" verticalCenter="-103" touchEnabled="true">
+				<e:Image id="goodsBg01" source="mainGame_json.bg_shangcheng01" scale9Grid="6,6,4,4" width="342" height="191" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="goodsIcon01" width="70" height="52" horizontalCenter="4" verticalCenter="-51.5" source="mainGame_json.icon_zuan"/>
+				<e:Label id="goodsLabel01" textColor="0x000000" fontFamily="黑体" textAlign="center" size="36" verticalAlign="middle" text="购买6粒宝石" verticalCenter="1.5" horizontalCenter="0"/>
+				<e:Image id="priceBg01" source="mainGame_json.bg_shangcheng02" x="17" y="123" width="307" height="49" scale9Grid="6,6,4,4"/>
+				<e:Label id="priceLabel01" textColor="0x000000" verticalAlign="middle" fontFamily="黑体" textAlign="center" size="30" horizontalCenter="0" verticalCenter="51.5" text="RMB 60"/>
+			</e:Group>
+			<e:Group id="goodsGroup02" width="342" height="191" horizontalCenter="179.5" verticalCenter="-103" touchThrough="true">
+				<e:Image id="goodsBg02" source="mainGame_json.bg_shangcheng01" horizontalCenter="0" verticalCenter="0" scale9Grid="6,6,4,4" width="342" height="191"/>
+				<e:Image id="goodsIcon02" source="mainGame_json.icon_zuan" horizontalCenter="4" verticalCenter="-51.5" width="70" height="52"/>
+				<e:Label id="goodsLabel02" textColor="0x000000" horizontalCenter="0" verticalAlign="middle" fontFamily="黑体" verticalCenter="1.5" size="36" text="购买12粒宝石" textAlign="center"/>
+				<e:Image id="priceBg02" source="mainGame_json.bg_shangcheng02" y="123" scale9Grid="6,6,4,4" width="307" height="49" x="17"/>
+				<e:Label id="priceLabel02" textColor="0x000000" horizontalCenter="0" text="RMB 60" fontFamily="黑体" textAlign="center" size="30" verticalAlign="middle" verticalCenter="51.5"/>
+			</e:Group>
+			<e:Group id="goodsGroup03" horizontalCenter="-183.5" verticalCenter="98" width="342" height="191" x="10" y="10" touchThrough="true">
+				<e:Image id="goodsBg03" source="mainGame_json.bg_shangcheng01" horizontalCenter="0" verticalCenter="0" scale9Grid="6,6,4,4" width="342" height="191"/>
+				<e:Image id="goodsIcon03" source="mainGame_json.icon_zuan" horizontalCenter="4" verticalCenter="-51.5" width="70" height="52"/>
+				<e:Label id="goodsLabel03" textColor="0x000000" horizontalCenter="0" verticalAlign="middle" fontFamily="黑体" verticalCenter="1.5" textAlign="center" size="36" text="购买40粒宝石"/>
+				<e:Image id="priceBg03" source="mainGame_json.bg_shangcheng02" y="123" x="17" scale9Grid="6,6,4,4" width="307" height="49"/>
+				<e:Label id="priceLabel03" textColor="0x000000" horizontalCenter="0" text="RMB 300" fontFamily="黑体" textAlign="center" verticalCenter="51.5" size="30" verticalAlign="middle"/>
+			</e:Group>
+			<e:Group id="goodsGroup04" y="20" horizontalCenter="178.5" verticalCenter="98" width="342" height="191" x="20" touchEnabled="true">
+				<e:Image id="goodsBg04" source="mainGame_json.bg_shangcheng01" horizontalCenter="0" verticalCenter="0" scale9Grid="6,6,4,4" width="342" height="191"/>
+				<e:Image id="goodsIcon04" source="mainGame_json.icon_zuan" horizontalCenter="4" verticalCenter="-51.5" width="70" height="52"/>
+				<e:Label id="goodsLabel04" textColor="0x000000" horizontalCenter="0" verticalAlign="middle" fontFamily="黑体" textAlign="center" size="36" text="购买150粒宝石" verticalCenter="1.5"/>
+				<e:Image id="priceBg04" source="mainGame_json.bg_shangcheng02" y="123" scale9Grid="6,6,4,4" width="307" height="49" x="17"/>
+				<e:Label id="priceLabel04" textColor="0x000000" horizontalCenter="0" text="RMB 890" fontFamily="黑体" verticalCenter="51.5" size="30" verticalAlign="middle" textAlign="center"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="adGroup" height="60" width="469" horizontalCenter="-0.5" verticalCenter="222">
+			<e:Image id="adImage" source="mainGame_json.bg_shangcheng03" scale9Grid="6,6,4,4" width="557" height="60" verticalCenter="0" horizontalCenter="0"/>
+			<e:Label id="mallTitle0" text="超级划算，加量不加价！" fontFamily="黑体" textAlign="center" size="24" verticalAlign="middle" textColor="0xFFFFFF" width="449" height="40" verticalCenter="-12" horizontalCenter="0" visible="false"/>
+			<e:Label id="mallTitle1" width="529" textColor="0xFFFFFF" size="22" text="提示：如遇网络问题，未即时到账，请刷新页面！" fontFamily="黑体" textAlign="center" height="40" horizontalCenter="0" verticalAlign="middle" x="10" verticalCenter="0"/>
+		</e:Group>
+		<e:Button id="cancelBtn" label="还不需要" x="520" y="622" width="235" height="71"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.IntroductionView" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" strokeAlpha="1"/>
+		<e:Image id="background" source="introduction1" verticalCenter="0" width="100%" height="100%" horizontalCenter="0" alpha="1"/>
+	</e:Group>
+</e:Skin>

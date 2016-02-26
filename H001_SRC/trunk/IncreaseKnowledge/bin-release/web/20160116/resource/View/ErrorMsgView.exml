@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.ErrorMsgView" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group height="720" left="0" right="0" y="0">
+		<e:Group height="400" verticalCenter="-32" horizontalCenter="0" minWidth="600">
+			<e:Image source="mainGame_json.bg_tiankuang04" left="0" right="0" top="0" bottom="0" scale9Grid="1,1,1,1" smoothing="true"/>
+			<e:Rect height="60" y="186" fillColor="0x93BCD3" left="0" right="0"/>
+			<e:Image source="mainGame_json.icon_zhuyi" horizontalCenter="0" verticalCenter="-113.5"/>
+			<e:Label id="errorMsg" bold="true" y="200" left="0" right="0" textAlign="center"/>
+			<e:Button id="Yes" label="确定" horizontalCenter="-1" verticalCenter="134" width="200"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

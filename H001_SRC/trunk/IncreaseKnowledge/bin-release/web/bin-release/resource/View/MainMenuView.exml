@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.MainMenuView" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ViewModel="ViewModel.*" xmlns:View="View.*">
+	<e:Group id="menuBtnGroup" width="1280" x="0" height="720" verticalCenter="0">
+		<e:Group id="recordItemGroup" width="305" height="305" left="20" top="70">
+			<ViewModel:MainMenuItemVM id="recordItemBtn" skinName="View.MainMenuItemView" top="0" bottom="0" left="0" right="0" 
+			                          menuItemSource="lvli_png" menuItemText="履历" menuItemEnText="PROFILE"/>
+			<e:Image id="recordMask" source="bg_02" left="0" bottom="0" top="0" scale9Grid="1,1,1,1" right="0" alpha="0.5" x="10" y="10" visible="false"/>
+		</e:Group>
+		<e:Group id="friendItemGroup" width="305" height="305" left="20" bottom="20">
+			<ViewModel:MainMenuItemVM id="friendItemBtn" bottom="0" right="0" left="0" top="0" skinName="View.MainMenuItemView" x="10" y="10" 
+			                          menuItemSource="haoyou_png" menuItemText="好友" menuItemEnText="FRIENDS"/>	
+			<e:Image id="friendMask" source="bg_02" left="0" scale9Grid="1,1,1,1" top="0" right="0" bottom="0" y="20" alpha="0.5" x="20" visible="false"/>
+		</e:Group>
+		<e:Group id="skillItemGroup" width="305" height="305" top="70" right="20">
+			<ViewModel:MainMenuItemVM id="skillItemBtn" bottom="0" left="0" top="0" right="0" y="20" skinName="View.MainMenuItemView" x="20" 
+			                          menuItemSource="jineng_png" menuItemText="技能" menuItemEnText="S K I L L"/>
+			<e:Group id="skillUpGroup" left="0" bottom="0" touchEnabled="false" right="0" top="0" visible="false">
+				<e:Label id="skillStateLabel" text="技能升级中" size="25" left="20" verticalCenter="63" touchEnabled="false"/>
+				<e:Label id="skillLeftLabel" size="25" text="00：00：00" width="200" height="31" textAlign="left" verticalCenter="135" left="20" touchEnabled="false"/>
+				<e:ProgressBar id="skillBar" skinName="skins.ProgressBarSkin"  width="140" height="31" value="0" verticalCenter="96" left="20" touchEnabled="false"/>
+			</e:Group>
+			<e:Image id="skillMask" left="0" bottom="0" top="0" x="30" right="0" y="30" alpha="0.5" source="mainGame_json.bg_02" scale9Grid="1,1,1,1" touchEnabled="false" visible="false"/>
+		</e:Group>
+		<e:Group id="challengeItemGroup" width="590" height="630" bottom="20" horizontalCenter="0">
+			<ViewModel:MainMenuItemVM id="challengeItemBtn" right="0" left="0" top="0" bottom="0" y="30" skinName="View.MainMenuItemView" x="30" 
+			                          menuItemSource="tiaozhan_png" menuItemText="挑战" menuItemEnText="C H A L L E N G E"/>
+			<e:Image id="challengeMask" left="0" right="0" top="0" bottom="0" y="40" alpha="0.5" x="40" source="mainGame_json.bg_02" scale9Grid="1,1,1,1" visible="false"/>
+		</e:Group>
+		<e:Group id="bankItemGroup" width="305" height="305" right="20" bottom="20">
+			<ViewModel:MainMenuItemVM id="bankItemBtn" bottom="0" left="0" top="0" right="0" y="40" skinName="View.MainMenuItemView" x="40" 
+			                          menuItemSource="yinhang_png" menuItemText="银行" menuItemEnText="B A N K"/>
+			<e:Image id="bankGoldIcon" source="icon_jinbi" verticalCenter="37.5" left="21"/>
+			<e:Label id="goldPercent" text="0/30" fontFamily="黑体" size="30" width="242" textAlign="left" verticalAlign="bottom" verticalCenter="38.5" left="75"/>
+			<e:ProgressBar id="goldBar" skinName="skins.ProgressBarSkin" width="140" height="31" verticalCenter="79" left="20"/>
+			<e:Label id="leftTimeLabel" text="00：00：00" fontFamily="黑体" width="272" size="30" multiline="true" verticalCenter="119.5" left="20"/>
+			<e:Image id="bankMask" source="bg_02" left="0" right="0" top="0" bottom="0" scale9Grid="1,1,1,1" alpha="0.5" touchEnabled="false" visible="false"/>
+		</e:Group>
+		<e:Image id="maskBg" top="0" bottom="0" alpha="0" touchEnabled="false" left="0" right="0" source="mainGame_json.bg_01" scale9Grid="1,1,1,1"/>
+	</e:Group>
+	<e:Group id="recordGroup" width="1280" height="720" verticalCenter="0" x="-1280" touchEnabled="false">
+		<e:Group id="recordRectGroup" left="20" right="450" bottom="20" top="70">
+			<e:Image id="recordBg" scale9Grid="1,1,1,628" left="0" right="0" top="0" bottom="0" source="mainGame_json.bg_tiankuang01"/>
+			<e:Image id="recordIcon" left="21" top="9" source="icon_lvli" width="52" height="52"/>
+			<e:Label id="recordTitle" text="履历" fontFamily="黑体" size="45" left="84" top="13"/>
+			<e:Group id="headGroup" height="300" width="250" left="20" top="95">
+				<e:Image id="headBorder" left="0" right="0" top="0" bottom="0" source="mainGame_json.bg_02" scale9Grid="1,1,1,1"/>
+				<e:Image id="headBg" left="15" right="15" top="15" bottom="65" source="mainGame_json.hong" scale9Grid="1,1,1,1"/>
+				<e:Group id="headIconGroup" left="15" right="15" top="15" bottom="65">
+					<e:Image id="headIcon" scale9Grid="1,1,1,1" verticalCenter="0" horizontalCenter="0" source="mainGame_json.01"/>
+				</e:Group>
+				<e:Label id="nameLabel" text="参赛者" fontFamily="黑体" size="35" horizontalCenter="1" bottom="15" textColor="0x403F3F" top="250"/>
+			</e:Group>
+			<e:Group id="infoGroup" left="275" right="0" top="70" bottom="230">
+				<e:Label id="levelLabel" text="等级：" fontFamily="黑体" left="26" top="25" width="90" height="30"/>
+				<e:Label id="levelValue" text="1" fontFamily="黑体" size="50" x="114" y="10" border="false" bold="true"/>
+				<e:Label id="expLabel" text="经验：" fontFamily="黑体" left="26" top="70" height="30"/>
+				<e:Label id="expValue" left="119" text="0/0" fontFamily="黑体" height="30" top="70" x="10" y="10" textAlign="left" size="34"/>
+				<e:Label id="combatGainsLabel" text="战绩：" fontFamily="黑体" left="26" top="115"/>
+				<e:Label id="combatGainsValue" left="120" text="0战0胜" top="115" fontFamily="黑体" x="10" y="10" size="30" textAlign="left"/>
+				<e:Label id="winRateLabel" text="胜率：" left="28" top="162" fontFamily="黑体"/>
+				<e:Label id="winRateValue" top="162" left="118" text="0.0%" fontFamily="黑体" x="10" y="10" size="34" textAlign="left"/>
+				<e:Label id="rightNumLabel" text="答对题数：" fontFamily="黑体" left="27" top="207"/>
+				<e:Label id="rightNumValue" left="168" text="1" top="207" fontFamily="黑体" x="10" y="10" size="34" textAlign="left"/>
+				<e:Label id="beatNumLabel" text="击败关主：" fontFamily="黑体" left="26" top="253"/>
+				<e:Label id="beatNumValue" left="167" text="0" top="253" fontFamily="黑体" x="10" y="10" size="34" textAlign="left"/>
+				<e:Label id="jackpotLabel" text="累积奖金：" fontFamily="黑体" left="25" top="299"/>
+				<e:Label id="jackpotValue" left="192" text="0" top="299" fontFamily="黑体" x="10" y="10" textAlign="left" size="34"/>
+				<e:Label id="goldAdditionLabel" text="金币加成：" fontFamily="黑体" left="302" top="207"/>
+				<e:Label id="goldAdditionValue" text="0%" fontFamily="黑体" textAlign="left" left="444" top="207" size="34"/>
+				<e:Label id="scoreAdditionLabel" text="分数加成：" fontFamily="黑体" left="302" top="253"/>
+				<e:Label id="scoreAdditionValue" top="253" left="447" text="0%" fontFamily="黑体" x="10" y="10" textAlign="left" size="34"/>
+				<e:Label id="expAdditionLabel" text="经验加成：" fontFamily="黑体" left="302" top="300"/>
+				<e:Label id="expAdditionValue" top="300" left="446" text="0%" fontFamily="黑体" x="10" y="10" size="34"/>
+				<e:Image id="goldIcon" width="22" height="22" source="icon_jinbi" left="165" top="303"/>
+			</e:Group>
+			<e:Group id="infoBtnGroup" left="0" right="0" bottom="0" top="410">
+				<e:Button id="headSettingBtn" label="头像设定" width="236" height="71" left="149" top="30" skinName="skins.ButtonSkin"/>
+				<e:Button id="systemSettingBtn" width="236" height="71" right="149" top="30" label="系统设定" skinName="skins.ButtonSkin"/>
+				<e:Button id="closeBtn" top="124" right="149" width="236" label="關閉" height="71" x="10" y="10" skinName="skins.ButtonSkin"/>
+				<e:Button id="achievementBtn" y="20" top="124" right="425" width="236" label="成就" height="71" x="20" skinName="skins.ButtonSkin"/>
+				<e:layout>
+					<e:BasicLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group id="levelGroup" width="1280" x="1280" height="720" verticalCenter="0">
+		<e:Button id="backBtn" label="回首页" width="189" height="60" skinName="skins.ButtonSkin" horizontalCenter="-505.5" verticalCenter="-255"/>
+		<e:Scroller left="3" right="-3" top="147" bottom="23">
+			<e:Group id="levelListGroup" width="1041" height="157">
+				<ViewModel:LevelItemVM id="levelItem_01" levelImageSource="level_01_png" width="212" height="550" horizontalCenter="-517" verticalCenter="0" skinName="View.LevelItemView"/>
+				<ViewModel:LevelItemVM id="levelItem_02" levelImageSource="level_02_png" width="212" height="550" horizontalCenter="-293" verticalCenter="0" skinName="View.LevelItemView"/>
+				<ViewModel:LevelItemVM id="levelItem_03" levelImageSource="level_03_png" width="212" height="550" horizontalCenter="-65" verticalCenter="0" skinName="View.LevelItemView"/>
+				<ViewModel:LevelItemVM id="levelItem_04" levelImageSource="level_04_png" width="212" verticalCenter="0" height="550" x="693" y="10" skinName="View.LevelItemView"/>
+				<ViewModel:LevelItemVM id="levelItem_05" levelImageSource="level_05_png" y="20" width="212" verticalCenter="0" height="550" horizontalCenter="388" skinName="View.LevelItemView"/>
+				<ViewModel:LevelItemVM id="levelItem_06" levelImageSource="level_06_png" y="30" horizontalCenter="388" width="212" verticalCenter="0" height="550" x="10" skinName="View.LevelItemView"/>
+				<ViewModel:LevelItemVM id="levelItem_07" levelImageSource="level_07_png" y="40" horizontalCenter="388" width="212" verticalCenter="0" height="550" x="20" skinName="View.LevelItemView"/>
+				<ViewModel:LevelItemVM id="levelItem_08" levelImageSource="level_08_png" y="50" x="30" horizontalCenter="388" width="212" verticalCenter="0" height="550" skinName="View.LevelItemView"/>
+				<e:Group id="shenglvehaoIcon" height="200" width="200" x="567" y="209">
+					<e:Image id="dot01" source="shengnuehao" x="588" y="270"/>
+					<e:Image id="dot02" source="shengnuehao" y="280" x="598"/>
+					<e:Image id="dot03" source="shengnuehao" y="290" x="608"/>
+					<e:layout>
+						<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="15"/>
+					</e:layout>
+				</e:Group>
+				<e:Image id="wenhaoIcon" source="icon_wenhao" x="467" y="170"/>
+				<e:layout>
+					<e:HorizontalLayout gap="15" horizontalAlign="center" verticalAlign="middle" paddingLeft="15" paddingRight="15"/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="skillGroup" width="1280" verticalCenter="0" height="720" x="1280">
+		<e:Group id="skillListGroup" width="811" right="20" bottom="20" top="70">
+			<e:Image id="skillListBg" left="0" right="0" top="0" bottom="0" source="mainGame_json.bg_tiankuang01" scale9Grid="1,1,1,628"/>
+			<e:Button id="skillBackBtn" label="回上页" width="188" height="60" skinName="skins.ButtonSkin" left="23" top="5"/>
+			<e:Scroller skinName="skins.ScrollerSkin" left="29" right="32" top="71" bottom="1">
+				<e:Group id="skillScrollerGroup">
+					<ViewModel:SkillItemVM id="skillItem_01" skinName="View.SkillItemView" skillIconSource="skillIcon_01"/>
+					<ViewModel:SkillItemVM id="skillItem_02" skinName="View.SkillItemView" skillIconSource="skillIcon_02"/>
+					<ViewModel:SkillItemVM id="skillItem_03" skinName="View.SkillItemView" skillIconSource="skillIcon_03"/>
+					<ViewModel:SkillItemVM id="skillItem_04" skinName="View.SkillItemView" skillIconSource="skillIcon_04"/>
+					<ViewModel:SkillItemVM id="skillItem_05" skinName="View.SkillItemView" skillIconSource="skillIcon_05"/>
+					<e:layout>
+						<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="15"/>
+					</e:layout>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+</e:Skin>

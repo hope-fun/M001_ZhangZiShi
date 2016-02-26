@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="View.LevelItemView" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="levelItemGroup" left="0" top="0" width="212" height="550">
+		<e:Image id="levelImage" alpha.disabled="0.5" source="level_01_png" scale9Grid="14,14,4,4" width="610" height="630" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image id="levelMask" width="100%" height="100%" alpha="0.01" source.down="bg_02" alpha.down="0.5" source="mainGame_json.bg_02" scale9Grid="1,1,1,1"/>
+		<e:Label id="levelName" textColor="0xFFFFFF" fontFamily="黑体" textAlign="left" verticalAlign="middle" size="40" height="90" verticalCenter="147" text="埃菲爾鐵塔" left="8" right="72"/>
+		<e:Label id="costLabel" textColor="0xFFFFFF" size="25" text="入場費：" fontFamily="黑体" textAlign="left" verticalAlign="middle" height="24" left="6" verticalCenter="214"/>
+		<e:Image id="costImage" source="icon_jinbi" scaleX="0.65" scaleY="0.65" horizontalCenter="8" verticalCenter="215"/>
+		<e:Label id="costValue" left="138" textColor="0xFFFFFF" size="26" text="125" fontFamily="黑体" textAlign="left" verticalCenter="214" verticalAlign="middle" height="24" x="10" y="10"/>
+		<e:Label id="duringValue" left="7" textColor="0xFFFFFF" size="25" text="10秒" fontFamily="黑体" textAlign="left" verticalCenter="248" verticalAlign="middle" height="24" x="10" y="10"/>
+		<e:Label id="turnValue" verticalCenter="248" textColor="0xFFFFFF" text="4回合" fontFamily="黑体" left="86" size="25" x="20" y="20" textAlign="left" verticalAlign="middle" height="24"/>
+		<e:Image id="sceneOwnImage" source="01" horizontalCenter="0" verticalCenter="0" visible="false"/>
+		<e:Group id="lockGroup" left="0" right="0" top="0" bottom="0">
+			<e:Image id="lockBg" left="0" right="0" top="0" bottom="0" alpha="0.5" scale9Grid="1,1,1,1" source="mainGame_json.bg_01"/>
+			<e:Image id="lockImage" horizontalCenter="0" verticalCenter="0" source="mainGame_json.icon_suo"/>
+			<e:Label id="lockLabel" text="尚未解鎖" fontFamily="黑体" horizontalCenter="2" verticalCenter="74" size="24"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

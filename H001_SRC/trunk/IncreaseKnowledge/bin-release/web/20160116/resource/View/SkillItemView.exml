@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.SkillItemView" width="750" height="165" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="skillItemGroup" width="750" height="165" verticalCenter="0" horizontalCenter="0">
+		<e:Image id="skillBg" source="skillBg_01_png" left="0" right="0" top="0" bottom="0"/>
+		<e:Image id="skillIcon" source="01" left="10" top="10" width="120" height="108"/>
+		<e:Image id="maskBottom" source="bg_01" width="749" height="50" bottom="0" alpha="0.5" scale9Grid="1,1,1,1" horizontalCenter="0"/>
+		<e:Image id="skillGold" source="icon_jinbi" verticalCenter="56.5" horizontalCenter="-189"/>
+		<e:Label id="skillGoldLabel" text="0" verticalCenter="58.5" fontFamily="黑体" textAlign="left" left="212"/>
+		<e:Image id="skillDiamond" source="icon_zuan" verticalCenter="55.5" horizontalCenter="22"/>
+		<e:Label id="skillDiamondLabel" left="430" text="0" fontFamily="黑体" textAlign="left" verticalCenter="58.5" x="10" y="10"/>
+		<e:Image id="skillClock" source="icon_shijian" verticalCenter="57.5" horizontalCenter="205"/>
+		<e:Label id="skillClockLabel" y="20" text="0" fontFamily="黑体" textAlign="left" verticalCenter="58.5" left="612"/>
+		<e:Label id="skillDes" width="247" fontFamily="黑体" textAlign="left" height="30" verticalCenter="7.5" left="166"/>
+		<e:Label id="skillLv" text="LV." fontFamily="黑体" textAlign="left" size="50" left="335" verticalCenter="-38.5" x="10" y="10"/>
+		<e:Label id="skillName" fontFamily="黑体" textAlign="left" size="50" text="技能名" verticalCenter="-43.5" left="163"/>
+	</e:Group>
+	<e:Group id="lockMaskGroup" left="0" right="0" top="0" bottom="0">
+		<e:Image id="lockMask" source="bg_01" alpha="0.5" scale9Grid="1,1,1,1" left="0" top="0" right="0" bottom="0"/>
+		<e:Image id="lockIcon" source="icon_suo" verticalCenter="-17.5" horizontalCenter="0"/>
+		<e:Label id="unlockLabel" fontFamily="黑体" textAlign="center" text="等级  解锁" horizontalCenter="0" y="131"/>
+	</e:Group>
+</e:Skin>

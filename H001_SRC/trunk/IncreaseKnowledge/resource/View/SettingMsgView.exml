@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="View.SettingMsgView" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="settingMsgGroup" left="0" right="0" top="0" bottom="0">
+		<e:Group id="settingRectGroup" scaleX="1" scaleY="1" width="810" height="630" horizontalCenter="-215" verticalCenter="25">
+			<e:Image id="settingBg" width="810" height="630" verticalCenter="0" horizontalCenter="0" source="mainGame_json.bg_tiankuang03" scale9Grid="1,1,1,628"/>
+			<e:Image source="jiangexian02" scale9Grid="1,0,1,2" id="intervalLine0" width="510" height="2" horizontalCenter="0" verticalCenter="-165"/>
+			<e:Image id="intervalLine1" source="jiangexian02" scale9Grid="1,0,1,2" width="510" height="2" verticalCenter="-74" horizontalCenter="0"/>
+			<e:Image source="jiangexian02" scale9Grid="1,0,1,2" id="intervalLine2" width="510" height="2" horizontalCenter="0" verticalCenter="20"/>
+			<e:Image source="jiangexian02" scale9Grid="1,0,1,2" width="510" height="2" id="intervalLine3" horizontalCenter="0" verticalCenter="113"/>
+			<e:Image id="settingIcon" source="icon_shezhi" horizontalCenter="-356" verticalCenter="-281"/>
+			<e:Label id="settingLabel" text="設定" fontFamily="黑体" verticalCenter="-280" horizontalCenter="-263" size="44"/>
+			<e:Label id="musicLabel" text="音樂" fontFamily="黑体" horizontalCenter="-168" verticalCenter="-202" size="36" x="10" y="10"/>
+			<e:ToggleSwitch id="musicBtn" label="切换按钮" height="58" width="161" horizontalCenter="91.5" verticalCenter="-205" skinName="skins.ToggleSwitchSkin"/>
+			<e:Label id="soundEffectLabel" y="20" text="音效" fontFamily="黑体" horizontalCenter="-168" verticalCenter="-120" size="36" x="20"/>
+			<e:ToggleSwitch id="soundEffectBtn" verticalCenter="-118" width="161" label="切换按钮" height="58" horizontalCenter="91.5" x="10" y="10" skinName="skins.ToggleSwitchSkin"/>
+			<e:Label id="shakeLabel" y="30" text="震動" fontFamily="黑体" x="30" horizontalCenter="-168" verticalCenter="-27" size="36"/>
+			<e:ToggleSwitch id="shakeBtn" horizontalCenter="91.5" y="20" x="20" width="161" verticalCenter="-24" label="切换按钮" height="58" skinName="skins.ToggleSwitchSkin"/>
+			<e:Label id="dialogueLabel" y="40" text="挑釁對話" fontFamily="黑体" x="40" horizontalCenter="-132" verticalCenter="71" size="36"/>
+			<e:ToggleSwitch id="dialogueBtn" y="30" x="30" width="161" verticalCenter="69" label="切换按钮" height="58" horizontalCenter="91.5" skinName="skins.ToggleSwitchSkin"/>
+			<e:Button id="instructionBtn" label="使用說明" width="234" height="71" horizontalCenter="-142" verticalCenter="170.5" skinName="skins.ButtonSkin"/>
+			<e:Button id="problemReportBtn" horizontalCenter="142" width="234" label="問題回報" verticalCenter="168.5" height="71" x="10" y="10" skinName="skins.ButtonSkin"/>
+			<e:Button id="closeBtn" y="20" horizontalCenter="0" width="234" label="關閉" verticalCenter="263.5" height="71" x="20" skinName="skins.ButtonSkin"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>
